@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Base Suite">
+
+    <groups>
+        <run>
+            <include name="ErrorHandling"/>
+        </run>
+    </groups>
+
+    <test name="Submit Order Test" thread-count="3">
+        <classes>
+            <class name="udemyframework.tests.SubmitOrderTest"/>
+        </classes>
+    </test>
+
+    <test name="Error Validations Test" thread-count="3">
+        <classes>
+            <class name="udemyframework.tests.ErrorValidationsTest"/>
+        </classes>
+    </test>
+
+</suite>
